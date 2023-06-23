@@ -35,4 +35,9 @@ public class UserRegistrationRequest {
 	@Pattern(regexp = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$", 
 	message = "Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character")
 	private String userPassword;
+	
+	@JsonProperty("userAddress")
+	@NotNull
+	@NotBlank
+	private String userAddress;
 }

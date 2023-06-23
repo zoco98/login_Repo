@@ -34,4 +34,7 @@ public class UserEntity {
 	
 	@Column(name="user_password")
 	private String userPassword;
+	
+	@Column(name="user_address")
+	private String userAddress;
 }

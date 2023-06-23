@@ -22,7 +22,8 @@ public class UserLoginServiceImpl implements UserLoginService{
 
 	@Override
 	public UserEntity createUser(UserRegistrationRequest userRegistrationRequest) {
-		UserEntity user = new UserEntity(0,userRegistrationRequest.getUserName(), userRegistrationRequest.getUserEmailId(),userRegistrationRequest.getUserPassword());
+		UserEntity user = new UserEntity(0,userRegistrationRequest.getUserName(), userRegistrationRequest.getUserEmailId(),
+										userRegistrationRequest.getUserPassword(),userRegistrationRequest.getUserAddress());
 			if(!isExistingUser(user)) {
 				return userRepo.save(user);
 			}
