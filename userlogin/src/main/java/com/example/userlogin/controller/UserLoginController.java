@@ -16,7 +16,7 @@ import com.example.userlogin.service.UserLoginService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/ecommerce/api")
+@RequestMapping("/ecommerce/api/user")
 public class UserLoginController {
 
 	@Autowired
