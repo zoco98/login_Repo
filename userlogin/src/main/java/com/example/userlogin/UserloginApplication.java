@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 	 * MS name- User Login
 	 * Objective- Create new user and fetch existing user
 	 * Table- User_DB
-	 * 1 MS: login/register  
+	 * 1 MS: login/register   
 	 * Technical Design-
 		  Registration-
 		    1. User give credentials- done
